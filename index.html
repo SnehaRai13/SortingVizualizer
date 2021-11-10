@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="p.css">
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+    <h3>Sorting Visualizer</h3>
+    <nav>
+        <div class="row">
+            <div class="new" id="arr">
+                <button type="button" class="newArray">New Array</button>
+            </div>
+            <div class="col" id="input">
+                <span id="size">Size
+                    <input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
+                </span>
+                <span id="speed">Speed
+                    <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+                </span>
+            </div>
+            
+            <div class="btn">
+                <button type="button" class="btn bubbleSort">Bubble Sort</button>
+                <button type="button" class="btn selectionSort">Selection Sort</button>
+                <button type="button" class="btn insertionSort">Insertion Sort</button>
+                <button type="button" class="btn quickSort">Quick Sort</button>
+                <button type="button" class="btn mergeSort">Merge Sort</button>
+            </div>
+        </div>
+    </nav>
+
+    <body>
+        <div id="bars" class="flex-container"></div>
+        <script src="p.js"></script>
+        <script src="bubblesort.js"></script>
+        <script src="selectionsort.js"></script>
+        <script src="quicksort.js"></script>
+        <script src="mergesort.js"></script>
+        <script src="insertionsort.js"></script>
+    </body>
+    
+</body>
+</html>
